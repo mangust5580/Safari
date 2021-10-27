@@ -1,0 +1,12 @@
+<section class="popular">
+  <div class="container">
+    <div class="popular__inner">
+      <h2 class="section-title popular__title" data-aos="flip-up" data-aos-duration="1000">
+        Популярные предложения
+      </h2>
+      <ul class="popular__list">
+        @loop('sections/popular-loop.html', 'data/sections/popular-loop.json')
+      </ul>
+    </div>
+  </div>
+</section>

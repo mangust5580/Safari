@@ -1,0 +1,76 @@
+[
+  {
+    "image": "popular-1",
+    "href": "#",
+    "title": "Путешествие по Намибии",
+    "price": "3000",
+    "large": false
+  },
+  {
+    "image": "popular-2",
+    "href": "#",
+    "title": "Классика Кении",
+    "price": "3500",
+    "large": false
+  },
+  {
+    "image": "popular-3",
+    "href": "#",
+    "title": "Cамые популярные сафари парки и заповедники Танзании",
+    "price": "1700",
+    "republics": ["Танзания"],
+    "time": "7 дней / 6 ночей",
+    "large": true
+  },
+  {
+    "image": "popular-4",
+    "href": "#",
+    "title": "Исследование Ботсваны",
+    "price": "2500",
+    "large": false
+  },
+  {
+    "image": "popular-5",
+    "href": "#",
+    "title": "Путешествие через 5 стран Южной Африки",
+    "price": "5000",
+    "large": false
+  },
+  {
+    "image": "popular-6",
+    "href": "#",
+    "title": "Грандиозное приключение по 9 странам Африки",
+    "price": "6000",
+    "republics": ["ЮАР", "Замбия", "Намибия", "Зимбабве", "Ботсвана", "Мозамбик", "Танзания", "Кения"],
+    "time": "24 дня / 23 ночи",
+    "large": true
+  },
+  {
+    "image": "popular-7",
+    "href": "#",
+    "title": "Великолепный Кейпатун",
+    "price": "3000",
+    "large": false
+  },
+  {
+    "image": "popular-8",
+    "href": "#",
+    "title": "Путешествие по ЮАР",
+    "price": "2500",
+    "large": false
+  },
+  {
+    "image": "popular-9",
+    "href": "#",
+    "title": "Великая миграция в Танзании и отдых на Занзибаре",
+    "price": "1700",
+    "large": false
+  },
+  {
+    "image": "popular-10",
+    "href": "#",
+    "title": "От Кейптауна до водопада Виктория",
+    "price": "2500",
+    "large": false
+  }
+]

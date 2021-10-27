@@ -1,0 +1,79 @@
+[
+  {
+    "picture": {
+      "image": "direction-1",
+      "alt": "Намибия"
+    },
+    "caption": "Намибия"
+  },
+  {
+    "picture": {
+      "image": "direction-2",
+      "alt": "Танзания"
+    },
+    "caption": "Танзания"
+  },
+  {
+    "picture": {
+      "image": "direction-3",
+      "alt": "Кения"
+    },
+    "caption": "Кения"
+  },
+  {
+    "picture": {
+      "image": "direction-4",
+      "alt": "Ботсвана"
+    },
+    "caption": "Ботсвана"
+  },
+  {
+    "picture": {
+      "image": "direction-5",
+      "alt": "Кейптаун"
+    },
+    "caption": "Кейптаун"
+  },
+  {
+    "picture": {
+      "image": "direction-6",
+      "alt": "Мадагаскар"
+    },
+    "caption": "Мадагаскар"
+  },
+  {
+    "picture": {
+      "image": "direction-7",
+      "alt": "Занзибар"
+    },
+    "caption": "Занзибар"
+  },
+  {
+    "picture": {
+      "image": "direction-8",
+      "alt": "ЮАР"
+    },
+    "caption": "ЮАР"
+  },
+  {
+    "picture": {
+      "image": "direction-9",
+      "alt": "Мозамбик"
+    },
+    "caption": "Мозамбик"
+  },
+  {
+    "picture": {
+      "image": "direction-10",
+      "alt": "Замбия"
+    },
+    "caption": "Замбия"
+  },
+  {
+    "picture": {
+      "image": "direction-11",
+      "alt": "Замбия"
+    },
+    "caption": "Замбия"
+  }
+]

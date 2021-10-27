@@ -1,0 +1,113 @@
+.booking {
+  background-color: #eaeaea;
+  &__inner {
+    padding-top: 25px;
+  }
+  &__title {
+    margin-bottom: 42px;
+  }
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 840px;
+    margin: 0 auto;
+  }
+  &__input,
+  &__area {
+    border: 1px solid #d9d9de;
+    box-sizing: border-box;
+    background-color: $white;
+    padding: 14px 12px;
+    &::placeholder {
+      font-family: $Roboto;
+      font-size: 16px;
+      line-height: 20px;
+      color: #c4c4c4;
+    }
+  }
+  &__input {
+    width: 256px;
+    height: 44px;
+    margin-bottom: 28px;
+    @include lg {
+      width: 100%;
+    }
+  }
+  &__area {
+    width: 100%;
+    resize: none;
+    min-height: 112px;
+    margin-bottom: 68px;
+    @include md {
+      margin-bottom: 30px;
+    }
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    @include md {
+      flex-wrap: wrap;
+    }
+  }
+  &__btn {
+    @extend %btn-reset;
+    @include md {
+      order: 2;
+    }
+    @include sm {
+      width: 100%;
+    }
+  }
+  &__label {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: $cod-gray;
+    cursor: pointer;
+    & p {
+      margin: 0;
+      margin-left: 20px;
+    }
+    transition: opacity 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+    @include md {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+  &__checkbox-style {
+    box-sizing: border-box;
+    border: 2px solid #c4c4c4;
+    border-radius: 2px;
+    width: 26px;
+    height: 26px;
+  }
+  &__checkbox:checked + &__checkbox-style {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background-image: url(../images/icon-checked.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

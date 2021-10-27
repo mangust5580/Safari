@@ -1,0 +1,92 @@
+.page-footer {
+  background-color: $cod-gray;
+  color: $white;
+  &__inner {
+    padding: 80px 0;
+    @include md {
+      padding: 50px 0;
+    }
+  }
+  &__logo {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 70px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    @include md {
+      margin-bottom: 40px;
+    }
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 840px;
+    margin: 0 auto;
+    @include md {
+      display: block;
+      text-align: center;
+    }
+  }
+  &__info {
+    width: 225px;
+    @include md {
+      width: 100%;
+    }
+  }
+  &__box-title {
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  &__copy,
+  &__address-text,
+  &__contacts-tel,
+  &__contacts-email {
+    margin-bottom: 4px;
+    opacity: 0.7;
+  }
+  &__contacts-tel,
+  &__contacts-email {
+    @extend %link;
+    display: inline-block;
+    color: $white;
+    width: 100%;
+    transition: opacity 0.3s;
+    &:hover {
+      opacity: 0.5;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+  &__link {
+    text-decoration: underline;
+    color: $white;
+    transition: opacity 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+  &__address {
+    width: 165px;
+    @include md {
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+  &__address-text {
+    font-family: $Roboto;
+    font-style: normal;
+  }
+  &__contacts {
+    width: 210px;
+    @include md {
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+}

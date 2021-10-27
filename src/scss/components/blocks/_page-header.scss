@@ -1,0 +1,92 @@
+.page-header {
+  background-color: #6f4c31;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  &__inner {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 16px;
+  }
+  &__phone {
+    display: flex;
+    align-items: center;
+  }
+  &__phone-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: $white;
+    @include lg {
+      display: none;
+    }
+  }
+  &__phone-number {
+    @extend %link;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: $white;
+    border-radius: 22px;
+    box-sizing: border-box;
+    padding: 12px 32px;
+    min-width: 216px;
+    margin-left: 20px;
+    @include md {
+      margin-left: 0;
+    }
+  }
+  &__title {
+    font-family: $PTSerif;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 118px;
+    color: $cod-gray;
+    text-align: center;
+    margin-bottom: auto;
+    @include md {
+      font-size: 50px;
+      line-height: 68px;
+    }
+  }
+  &__btn {
+    margin-bottom: 24px;
+    @include sm {
+      width: 100%;
+    }
+  }
+  &__descr {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: $cod-gray;
+    max-width: 460px;
+    margin-bottom: 28px;
+    @include md {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+  &__arrow {
+    text-align: center;
+    margin-bottom: 15px;
+    transition: opacity 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+  &__arrow-btn {
+    @extend %btn-reset;
+  }
+}

@@ -1,0 +1,29 @@
+<section class="gallery">
+  <div class="container">
+    <div class="gallery__inner">
+      <div class="gallery__header" data-aos="fade-down" data-aos-duration="1000">
+        <h2 class="gallery__title section-title">Фотогалерея</h2>
+        <a class="gallery__link" href="#">Перейти в раздел</a>
+      </div>
+      <div class="gallery__slider">
+        <div class="gallery__slider-btns" data-aos="fade-down" data-aos-duration="1000">
+          <button class="gallery__slider-btn gallery__slider-btn--prev" aria-label="Перейти к предыдущему слайду">
+            <svg class="gallery__slider-btn-icon" width="44" height="44">
+              <use xlink:href="images/sprite.svg#icon-arrow" />
+            </svg>
+          </button>
+          <button class="gallery__slider-btn gallery__slider-btn--next" aria-label="Перейти к следующему слайду">
+            <svg class="gallery__slider-btn-icon" width="44" height="44">
+              <use xlink:href="images/sprite.svg#icon-arrow" />
+            </svg>
+          </button>
+        </div>
+        <div class="swiper-container" data-aos="zoom-in" data-aos-duration="1000">
+          <div class="swiper-wrapper">
+            @loop('sections/gallery-loop.html', 'data/sections/gallery-loop.json')
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

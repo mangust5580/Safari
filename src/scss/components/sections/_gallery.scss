@@ -1,0 +1,99 @@
+.gallery {
+  background-color: $potters-clay;
+  margin-top: 50px;
+  color: $white;
+  &__inner {
+    padding: 20px 0;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-right: 160px;
+    @include md {
+      flex-wrap: wrap;
+    }
+  }
+  &__title {
+    color: $white;
+    text-align: left;
+    @include md {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $white;
+    transition: opacity 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+  &__slider {
+    position: relative;
+  }
+  &__slider-slide-inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    @include md {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    @include sm {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  &__slider-img {
+    object-fit: cover;
+    transition: opacity 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+    @include sm {
+      width: 100%;
+    }
+  }
+  &__slider-btns {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    top: -86px;
+    right: 0;
+    @include sm {
+      top: -70px;
+    }
+  }
+  &__slider-btn {
+    @extend %btn-reset;
+    display: inline-block;
+    box-sizing: border-box;
+    transition: opacity 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+    &--next {
+      transform: rotate(180deg);
+    }
+  }
+  &__slider-btn-icon {
+    display: block;
+    @include sm {
+      width: 36px;
+      height: 36px;
+    }
+  }
+}

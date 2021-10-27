@@ -1,0 +1,25 @@
+.map {
+  &__title {
+    margin-bottom: 46px;
+  }
+  &__map-block {
+    position: relative;
+    width: 100%;
+  }
+  &__img {
+    object-fit: cover;
+    @include md {
+      height: 380px;
+    }
+  }
+  &__interactive {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    @include md {
+      height: 380px;
+    }
+  }
+}

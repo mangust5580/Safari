@@ -1,0 +1,20 @@
+<div class="gallery__slider-slide swiper-slide">
+  <div class="gallery__slider-slide-inner">
+    @for (let i = 0; i < images.length; i++) {
+      <a class="gallery__slider-slide-link" href="images/gallery/`+images[i].image+`.jpg" data-fslightbox="gallery">
+      <picture>
+        <source type="image/avif" srcset="
+            images/gallery/`+images[i].image+`.avif 1x,
+            images/gallery/`+images[i].image+`.avif 2x
+          " />
+        <source type="image/webp" srcset="
+            images/gallery/`+images[i].image+`.webp 1x,
+            images/gallery/`+images[i].image+`.webp 2x
+          " />
+        <img class="gallery__slider-img" width="352" height="256" src="images/gallery/`+images[i].image+`.jpg"
+          srcset="images/gallery/`+images[i].image+`@2x.jpg 2x" alt="`+images[i].alt+`" />
+      </picture>
+    </a>
+    }
+  </div>
+</div>

@@ -1,0 +1,58 @@
+[
+  {
+    "images": [
+      {
+        "image": "gallery-1",
+        "alt": "Сафари по Африке"
+      },
+      {
+        "image": "gallery-2",
+        "alt": "Дети Африки"
+      },
+      {
+        "image": "gallery-3",
+        "alt": "Национальный парк"
+      },
+      {
+        "image": "gallery-4",
+        "alt": "Лев обнимает человека"
+      },
+      {
+        "image": "gallery-5",
+        "alt": "Тропическая Африка"
+      },
+      {
+        "image": "gallery-6",
+        "alt": "Лев"
+      }
+    ]
+  },
+  {
+    "images": [
+      {
+        "image": "gallery-7",
+        "alt": "Необычная Танзания"
+      },
+      {
+        "image": "gallery-8",
+        "alt": "Жираф Кения"
+      },
+      {
+        "image": "gallery-9",
+        "alt": "Слоны"
+      },
+      {
+        "image": "gallery-10",
+        "alt": "Львы"
+      },
+      {
+        "image": "gallery-11",
+        "alt": "Зебры Танзания"
+      },
+      {
+        "image": "gallery-12",
+        "alt": "Природа ЮАР"
+      }
+    ]
+  }
+]

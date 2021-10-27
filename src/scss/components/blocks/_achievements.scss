@@ -1,0 +1,40 @@
+.achievements {
+  &__list {
+    @extend %list;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 70px;
+
+    @include lg {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px 15px;
+    }
+
+    @include sm {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__item {
+    text-align: center;
+
+    & span {
+      font-family: $PTSerif;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 64px;
+      color: $potters-clay;
+      text-align: center;
+      white-space: nowrap;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: $cod-gray;
+    text-transform: lowercase;
+  }
+}

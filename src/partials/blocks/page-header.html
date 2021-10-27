@@ -1,0 +1,42 @@
+<header class="page-header" style="
+    background-image: -webkit-image-set(
+      url(images/page-header-bg.jpg) 1x,
+      url(images/page-header-bg@2x.jpg) 2x
+    );
+  ">
+  <div class="container">
+    <div class="page-header__inner">
+      <div class="page-header__top">
+        @include('blocks/logo.html', {
+          className: 'page-header__logo',
+          width: 286,
+          height: 60
+        })
+        <div class="page-header__phone">
+          <p class="page-header__phone-text">Заказ туров и бронирование:</p>
+          <a class="page-header__phone-number btn" href="tel:80508543543">тел. 8-050-8-543-543</a>
+        </div>
+        @include('blocks/main-nav.html')
+      </div>
+      <h1 class="page-header__title" data-aos="fade-in" data-aos-duration="3000">
+        Сафари по Африке
+      </h1>
+      <div class="page-header__content" data-aos="fade-right" data-aos-duration="1000">
+        <p class="page-header__descr">
+          Туры по самым экзотическим местам Поехали с нами за новыми впечатлениями!
+        </p>
+        <a class="page-header__btn btn link" href="#"">Отправить заявку</a>
+      </div>
+      <div class="page-header__arrow">
+        <button class="page-header__arrow-btn" aria-label="Промотать вниз">
+          @include('blocks/icon.html', {
+          className: 'page-header__arrow-icon',
+          width: '43',
+          height: '41',
+          href: 'icon-btn-arrow'
+          })
+        </button>
+      </div>
+    </div>
+  </div>
+</header>

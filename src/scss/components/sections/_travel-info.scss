@@ -1,0 +1,46 @@
+.travel-info {
+  background-color: $potters-clay;
+  background-image: -webkit-image-set(
+    url("../images/travel-info-bg.jpg") 1x,
+    url("../images/travel-info-bg@2x.jpg") 2x
+  );
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  color: $white;
+  &__title {
+    margin-bottom: 50px;
+    color: $white;
+  }
+  &__list {
+    @extend %list;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 54px 68px;
+    @include lg {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include md {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include sm {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  &__item {
+    @include sm {
+      text-align: center;
+    }
+  }
+  &__item-icon {
+    fill: none;
+    margin-bottom: 15px;
+  }
+  &__item-text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: $white;
+  }
+}

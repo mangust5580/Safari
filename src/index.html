@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include('blocks/head.html', {
+title: "Safari"
+})
+
+<body>
+  <div class="site-container">
+    @include('blocks/page-header.html')
+    <main>
+      @include('sections/direction.html')
+      @include('sections/travel-info.html')
+      @include('sections/popular.html')
+      @include('sections/map.html')
+      @include('sections/about.html')
+      @include('sections/gallery.html')
+      @include('sections/tour.html')
+      @include('sections/booking.html')
+    </main>
+    @include('blocks/page-footer.html')
+    @include('modal/about-video.html')
+  </div>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

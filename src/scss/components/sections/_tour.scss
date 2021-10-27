@@ -1,0 +1,33 @@
+.tour {
+  &__title {
+    margin: 0;
+    margin-bottom: 77px;
+    font-weight: 700;
+    text-transform: uppercase;
+    @include lg {
+      margin-bottom: 40px;
+    }
+  }
+  &__box {
+    column-count: 2;
+    column-gap: 46px;
+    border-bottom: 1px solid #d9d9de;
+    padding-bottom: 50px;
+    margin-bottom: 44px;
+    @include lg {
+      column-count: 1;
+      column-gap: 0;
+    }
+  }
+  &__text {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: $cod-gray;
+    & b {
+      text-transform: uppercase;
+    }
+  }
+}

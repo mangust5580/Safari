@@ -1,0 +1,21 @@
+<li class="popular__item @if(large === true) {popular__item--large}" data-aos="fade-right" data-aos-duration="1000">
+  <a class="popular__link" href="@href" style="
+              background-image: -webkit-image-set(
+                url(images/popular/@image.jpg) 1x,
+                url(images/popular/@image@2x.jpg) 2x
+              );
+            ">
+    <h3 class="popular__link-title @if(large === true) {popular__link-title--large}">
+      @title
+    </h3>
+    @if(large === true) {
+    <ul class="popular__link-republics">
+        @for(let i = 0; i < republics.length; i++) {
+          <li class="popular__link-republics-item">`+republics[i]+`</li>
+        }
+      </ul>
+      <p class="popular__link-time">@time</p>
+      }
+    <span class="popular__link-price">от @price $</span>
+  </a>
+</li>
